@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="sobre.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oberon Atelie e Marcenaria</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vw;
+    font-size: 62.5%;
+    color:black;
+    font-family:'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 7vw;
+    background-color: black;
+}
+
+.menu-content{
+    display: flex;
+    text-transform: uppercase;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 24px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    
+}
+
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color:white;
+    transition: all 1.5s ease;
+
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100px;
+}
+
+
+.main-content img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    float: left;
+    padding: 35px;
+    
+}
+.primary-text{
+    width: 850px;
+    font-size: 4rem;
+    color:rgb(247, 60, 60);
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.texto-secundario1{
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    color:black;
+    justify-content: left;
+    text-align: left;
+}
+
+.subtexto1{
+    width: 850px;
+    font-size: 2rem;
+    color:black;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    padding: 2px;
+}
+
+.texto-secundario2{
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    color:black;
+    justify-content: left;
+    text-align: left;
+}
+
+.contato{
+    font-size: 2em;
+    margin-top: 0;
+    padding: 8px;
+}
+
+@media screen and (max-width:907px) {
+
+    .logo{
+    font-size: 1em;
+    letter-spacing: 0.4rem;
+    display: flex;
+    text-align: left;
+    }
+
+    .menu-content .list-itens{
+
+        font-size: 0.5em;
+}
+
+.menu-content{
+    display: flex;
+    text-transform: uppercase;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 24px;
+    }
+
+    .main-content{
+        font-size: 1.2em;
+    }
+    
+    header{
+    width: 100%;
+    height: 15vw;
+    background-color: black;
+    
+}
+
+
+
+.subtexto1{
+    text-align: left;
+}
+
+.primary-text{
+    text-align: left;
+}
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-content">
+          <h1 class="logo">Oberon Atelier & Marcenaria</h1>
+          <nav class="headear-menu">
+            <ul class="list-itens">
+                <li><a href= "index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="vantagens.html">Vantagens e Beneficios</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+        
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main class="principal">
+
+        <div class="main-content">
+            <img id = "img_redonda" src="img/imgsobre.jpg" />
+
+            <h3 class="primary-text">Sobre nós</h3>
+            <p class="texto-secundario1"><br>No coração da arte e da habilidade em madeira, o Atelier e Marcenaria Oberon é um espaço onde a tradição se encontra com a inovação.<br> Com uma paixão dedicada à criação de peças únicas e personalizadas,<br> paixão essa que já dura a mais de 5 anos ,sempre trazendo o de melhor para propocionar uma experiencia unica a cada cliente </p>
+            <br>
+            <p class="contato"><strong>Estamos situados na Rua Ercilio Lincon, 839, no bairro Parque Jandaia, em São Paulo-SP</strong></p>
+            <br>
+            <h3 class="subtexto1">Quem somos:</h3>
+            <p class ="texto-secundario2">Nos da Oberon acreditamos que cada peça feita e confeccionda traz consigo uma historia unica e é pensando nisso que o nosso ponto chave é entender o que cada cliente precisa transformando seus desejos abstratos em algo palpavel. Porém para alcançar tais objetivos valores chaves como <strong> qualidade, profissionalismo e criatividade</strong> fazem parte dos nossos pilares</p>
+
+
+        </div>
+    </main>
+
+</body>
+</html>

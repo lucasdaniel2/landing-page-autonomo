@@ -1,0 +1,202 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vw;
+    font-size: 62.5%;
+    color: white;
+    font-family:'Lato', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/fundohome.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 7vw;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content{
+    display: flex;
+    text-transform: uppercase;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 24px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: whitesmoke;
+    transition: all 1.5s ease;
+
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100px;
+}
+
+main{
+    height: 93vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-text{
+    width: 850px;
+    font-size: 6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.secund-text{
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    color:rgb(165, 165, 165);
+    justify-content: center;
+    text-align: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+.btns button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid red;
+    color: white;
+    text-transform: uppercase;
+    background-color: red;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+
+}
+
+.rodape{
+    background-color:black;
+    justify-content: center;
+}
+
+.principal{
+    font-size: 2.5em;
+    padding: 2em;
+    color: red;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.rodape-paragrafo{
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 907px) {
+
+    .logo{
+    font-size: 1em;
+    letter-spacing: 0.4rem;
+    display: flex;
+    }
+
+    .menu-content .list-itens{
+
+        font-size: 0.5em;
+}
+
+    .primary-text{
+        width: 750px;
+        font-size:2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+    }
+
+    .secund-text{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 2em;
+    margin-right: 2em;
+    color:rgb(165, 165, 165);
+    justify-content: center;
+    text-align: center;
+    }
+
+    .menu-content{
+    display: flex;
+    text-transform: uppercase;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 24px;
+    }
+
+    .main-content{
+        font-size: 1.8em;
+    }
+
+    
+
+}
